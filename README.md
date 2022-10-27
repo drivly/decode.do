@@ -19,6 +19,7 @@ Decode a Text value: <https://decode.do/SGVsbG8sIFdvcmxkIQ==>
     "subscribe": "https://decode.do/subscribe",
     "repo": "https://github.com/drivly/decode.do"
   },
+  "encoded": "SGVsbG8sIFdvcmxkIQ==",
   "decoded": "Hello, World!"
 }
 ```
@@ -42,9 +43,11 @@ Decode a JSON Object: <https://decode.do/eyAiaGVsbG8iOiAid29ybGQiIH0=>
     "subscribe": "https://decode.do/subscribe",
     "repo": "https://github.com/drivly/decode.do"
   },
+  "encoded": "eyAiaGVsbG8iOiAid29ybGQiIH0=",
   "decoded": {
     "hello": "world"
   }
+}
 ```
 
 ## [Drivly Open](https://driv.ly/open) - [Accelerating Innovation through Open Source](https://blog.driv.ly/accelerating-innovation-through-open-source)
