@@ -1,58 +1,50 @@
-# worker.templates.do - Templates
+# decode.do - Base64 Decode API
 
-## Getting Started
-
-If you don't already have a browser extension to pretty-print JSON and make links clickable, start by installing that: <https://extensions.do>
-
-Then interactively use the API at: <https://templates.do/api>
+Decode a Text value: <https://decode.do/SGVsbG8sIFdvcmxkIQ==>
 
 ```json
 {
   "api": {
-    "icon": "🚀",
-    "name": "templates.do",
-    "description": "Cloudflare Worker Template",
-    "url": "https://templates.do/api",
-    "type": "https://apis.do/templates",
+    "icon": "🔐",
+    "name": "decode.do",
+    "description": "Base64 Decode API",
+    "url": "https://decode.do/api",
+    "type": "https://apis.do/utilities",
     "endpoints": {
-      "listCategories": "https://templates.do/api",
-      "getCategory": "https://templates.do/:type"
+      "decode": "https://decode.do/:encodedString"
     },
-    "site": "https://templates.do",
-    "login": "https://templates.do/login",
-    "signup": "https://templates.do/signup",
-    "subscribe": "https://templates.do/subscribe",
-    "repo": "https://github.com/drivly/templates.do"
+    "site": "https://decode.do",
+    "login": "https://decode.do/login",
+    "signup": "https://decode.do/signup",
+    "subscribe": "https://decode.do/subscribe",
+    "repo": "https://github.com/drivly/decode.do"
   },
-  "gettingStarted": [
-    "If you don't already have a JSON Viewer Browser Extension, get that first:",
-    "https://extensions.do"
-  ],
-  "examples": {
-    "listItems": "https://templates.do/worker"
-  },
-  "user": {
-    "authenticated": false,
-    "plan": "🛠 Build",
-    "browser": "Safari",
-    "os": "Mac OS",
-    "ip": "2606:54c0:76a0:1d18::e:fe",
-    "isp": "iCloud Private Relay",
-    "flag": "🇺🇸",
-    "zipcode": "94088",
-    "city": "Sunnyvale",
-    "metro": "San Francisco-Oak-San Jose",
-    "region": "California",
-    "country": "United States",
-    "continent": "North America",
-    "requestId": "751b42735f76e206-ORD",
-    "localTime": "9/28/2022, 1:55:20 AM",
-    "timezone": "America/Los_Angeles",
-    "edgeLocation": "Chicago",
-    "edgeDistanceMiles": 1833,
-    "recentInteractions": 10
-  }
+  "decoded": "Hello, World!"
 }
+```
+
+Decode a JSON Object: <https://decode.do/eyAiaGVsbG8iOiAid29ybGQiIH0=>
+
+```json
+{
+  "api": {
+    "icon": "🔐",
+    "name": "decode.do",
+    "description": "Base64 Decode API",
+    "url": "https://decode.do/api",
+    "type": "https://apis.do/utilities",
+    "endpoints": {
+      "decode": "https://decode.do/:encodedString"
+    },
+    "site": "https://decode.do",
+    "login": "https://decode.do/login",
+    "signup": "https://decode.do/signup",
+    "subscribe": "https://decode.do/subscribe",
+    "repo": "https://github.com/drivly/decode.do"
+  },
+  "decoded": {
+    "hello": "world"
+  }
 ```
 
 ## [Drivly Open](https://driv.ly/open) - [Accelerating Innovation through Open Source](https://blog.driv.ly/accelerating-innovation-through-open-source)
