@@ -20,7 +20,7 @@ export const gettingStarted = [
 ]
 
 export const examples = {
-  listItems: 'https://decode.do/worker',
+  "Decode JSON": 'https://decode.do/eyAiaGVsbG8iOiAid29ybGQiIH0=',
 }
 
 export default {
