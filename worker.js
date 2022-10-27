@@ -30,7 +30,13 @@ export default {
     
     // TODO: Implement this
     const [ encoded ] = pathSegments
-    const decoded = atob(encoded)
+    const decodedValue = atob(encoded)
+    
+    let decoded = decodedValue 
+    
+    try {
+      decoded = JSON.parse(decodedValue)
+    } catch { }
     
     return json({ api, decoded, user })
   }
