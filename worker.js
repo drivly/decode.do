@@ -39,7 +39,7 @@ export default {
       decoded = JSON.parse(decodedValue)
     } catch { }
     
-    return json({ api, decoded, user })
+    return json({ api, encoded, decoded, user })
   }
 }
 
